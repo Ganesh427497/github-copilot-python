@@ -58,3 +58,18 @@ Use GitHub Copilot to refactor the code for this game to add more advanced featu
 - The game should be responsive and work well on both desktop and mobile devices.
 - UI colors should be visually appealing and accessible.
 - Completed and correct puzzles should display a congratulatory message with the time taken and hints used and ask for the user's name for Top 10 times.
+## My Refactoring with GitHub Copilot
+
+I used GitHub Copilot to modernize the Sudoku codebase:
+
+1. **Type Hints**: Used Copilot Chat prompt "add type hints List[List[int]]" to add `from typing import List, Tuple` and typed all functions in `starter/sudoku_logic.py`:
+   - `is_valid(board: List[List[int]], row: int, col: int, num: int) -> bool`
+   - `find_empty(board: List[List[int]]) -> Optional[Tuple[int,int]]`
+   - `fill_board(board: List[List[int]]) -> bool`
+
+2. **Copilot Features Used**:
+   - Inline Autocomplete (Tab to accept)
+   - Chat Inline: Ctrl+I -> /doc command for docstrings
+   - Chat Prompt: "add type hints"
+
+3. **Result**: Code is now type-safe, readable, and passes mypy checks.
